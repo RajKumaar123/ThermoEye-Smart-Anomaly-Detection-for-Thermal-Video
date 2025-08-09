@@ -197,8 +197,8 @@ else:
 # ✅ AI-Powered Thermal Summary and Q&A
 # ===============================
 import google.generativeai as genai
-
-genai.configure(api_key="AIzaSyCoToTruLK3_oWgQf32kGU4iyQhE_zGHIQ")
+# add API key
+genai.configure(api_key=" ") 
 model = genai.GenerativeModel("gemini-1.5-flash")
 
 def ask_gemini(prompt, df=None):
